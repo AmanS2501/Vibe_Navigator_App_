@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+nest-asyncio
+pyngrok
+python-multipart
+pydantic
+sentence-transformers
+chromadb
+groq
+langchain
+langchain-community
+langchain-groq
+python-dotenv
