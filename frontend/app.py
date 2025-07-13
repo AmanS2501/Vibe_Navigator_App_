@@ -96,7 +96,7 @@ load_dotenv(find_dotenv(), override=True)
 st.set_page_config(page_title="Vibe Navigator", page_icon="🌆", layout="centered")
 
 # --- FastAPI Backend URL ---
-BACKEND_URL = "https://vibe-navigator-app.onrender.com/get_vibe"
+BACKEND_URL = "https://vibe-navigator-app-9ksz.onrender.com/get_vibe"
 
 with st.container():
     st.markdown('<div class="main-container">', unsafe_allow_html=True)
