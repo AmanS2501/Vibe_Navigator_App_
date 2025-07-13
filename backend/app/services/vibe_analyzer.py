@@ -1,10 +1,8 @@
-# services/vibe_analyzer.py
-
 from typing import List, Dict
 
 class VibeAnalyzer:
     def analyze_location_vibe(self, reviews: List[Dict]) -> Dict:
-        # Simple tag extraction and emoji mapping for demo; can be made more sophisticated
+        
         tags = []
         emojis = []
         text = " ".join([r["text"] for r in reviews[:10]])

@@ -1,5 +1,3 @@
-# services/rag_service.py
-
 from typing import List, Dict, Any
 from .embedding import EmbeddingService
 from .vector_db import VectorDB

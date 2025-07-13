@@ -21,10 +21,7 @@ class RedditScraper:
         )
 
     async def scrape(self, city: str, category: str = "restaurants", max_posts: int = 100) -> List[dict]:
-        """
-        Scrape Reddit for posts and comments mentioning restaurants in the given city.
-        Returns a list of review dicts.
-        """
+       
         query = f"{city} {category}"
         subreddit_list = [
             "restaurants", "food", "travel", "AskReddit", "FoodPorn", "india", "CityPorn"
@@ -51,11 +48,11 @@ class RedditScraper:
                                 helpful_count=submission.score
                             ).dict()
                         )
-                    # Fetch top-level comments as reviews
+                    
                     await submission.load()
                     comments = submission.comments
                     await comments.replace_more(limit=0)
-                    for comment in comments.list()[:10]:  # Collect more comments per post if desired
+                    for comment in comments.list()[:10]: 
                         if hasattr(comment, "body") and comment.body and len(comment.body) > 30:
                             reviews.append(
                                 Review(

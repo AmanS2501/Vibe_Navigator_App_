@@ -1,5 +1,3 @@
-# services/google_maps_scraper.py
-
 import os
 import logging
 import requests
@@ -18,7 +16,7 @@ class GoogleMapsScraper:
             raise ValueError("Missing GOOGLE_PLACES_API_KEY in environment variables.")
 
     def get_place_ids(self, city: str, category: str = "restaurant", max_places: int = 100) -> List[str]:
-        """Get place_ids for restaurants in the city using Places API Text Search."""
+        
         place_ids = []
         url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
         params = {

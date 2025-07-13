@@ -1,5 +1,3 @@
-# services/vector_db.py
-
 import chromadb
 from typing import List, Dict, Any
 

@@ -1,14 +1,12 @@
-# backend/app/services/agent.py
-
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
-from langchain_chroma import Chroma  # Updated import
+from langchain_chroma import Chroma 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 import os
 import warnings
 
-# Suppress deprecation warnings for cleaner output
+
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 class VibeAgent:
