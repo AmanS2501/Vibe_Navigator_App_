@@ -1,7 +1,7 @@
 import asyncio
 import json
 from datetime import datetime
-from backend.app.services.scraper import ReviewScraper
+from .scraper import ReviewScraper
 
 def serialize_datetimes(obj):
     if isinstance(obj, list):
