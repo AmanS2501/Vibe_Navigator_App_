@@ -33,9 +33,11 @@ async def main(place_name):
         print(f"URL: {review['source_url']}")
         print("-----\n")
 
-    # Properly close Reddit client if it exists
-    if hasattr(scraper.sources['reddit'], 'close'):
-        await scraper.sources['reddit'].close()
+    reddit_client = scraper.sources.get('reddit')
+    if reddit_client and hasattr(reddit_client, 'close'):
+        await reddit_client.close()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    import sys
+    city = sys.argv[1] if len(sys.argv) > 1 else input("Enter city name: ")
+    asyncio.run(main(city))

@@ -1,5 +1,3 @@
-# services/scraper.py
-
 import logging
 from typing import List
 from .reddit_scraper import RedditScraper
