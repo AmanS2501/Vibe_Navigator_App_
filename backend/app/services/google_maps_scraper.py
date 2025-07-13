@@ -5,7 +5,7 @@ import logging
 import requests
 from datetime import datetime
 from typing import List
-from base import Review
+from .base import Review
 from dotenv import load_dotenv
 
 load_dotenv()

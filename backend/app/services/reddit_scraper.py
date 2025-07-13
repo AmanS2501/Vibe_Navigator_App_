@@ -3,7 +3,7 @@ import logging
 from datetime import datetime
 from typing import List
 import asyncpraw
-from base import Review
+from .base import Review
 
 logger = logging.getLogger(__name__)
 

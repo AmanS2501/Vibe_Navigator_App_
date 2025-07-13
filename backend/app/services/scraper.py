@@ -2,8 +2,8 @@
 
 import logging
 from typing import List
-from reddit_scraper import RedditScraper
-from google_maps_scraper import GoogleMapsScraper
+from .reddit_scraper import RedditScraper
+from .google_maps_scraper import GoogleMapsScraper
 
 logger = logging.getLogger(__name__)
 
