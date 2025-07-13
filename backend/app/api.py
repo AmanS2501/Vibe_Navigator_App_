@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from typing import List, Any
-from .engine import run_full_pipeline
+from engine import run_full_pipeline
 
 router = APIRouter()
 
