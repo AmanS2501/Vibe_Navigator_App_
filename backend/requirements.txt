@@ -12,3 +12,4 @@ langchain-community
 langchain-groq
 python-dotenv
 asyncpraw
+langchain_chroma
