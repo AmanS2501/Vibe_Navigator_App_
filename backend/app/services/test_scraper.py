@@ -11,8 +11,8 @@ def serialize_datetimes(obj):
     else:
         return obj
 
-async def main():
-    city = input("Enter city name to scrape restaurant reviews: ")
+async def main(place_name):
+    city = place_name
     scraper = ReviewScraper()
     print(f"Scraping restaurants and reviews for {city}... This may take a while.")
     reviews = await scraper.scrape_city_restaurants(city, max_places=100)
