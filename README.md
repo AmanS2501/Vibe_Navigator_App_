@@ -192,7 +192,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**Aman Sharma** - [@AmanS2501](https://github.com/AmanS2501)
+**Aman Shaikh** - [@AmanS2501](https://github.com/AmanS2501)
 
 Project Link: [https://github.com/AmanS2501/Vibe_Navigator_App_](https://github.com/AmanS2501/Vibe_Navigator_App_)
 
